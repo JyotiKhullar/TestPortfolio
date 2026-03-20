@@ -1,78 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Installation Guide - Node.js</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+/* Layout */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9fafb;
+}
 
-<body>
-  <div class="container">
+.layout {
+  display: flex;
+}
 
-    <h1>Installation Guide</h1>
-    <p>This guide explains how to install Node.js on a Windows system.</p>
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #111827;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+}
 
-    <div class="section">
-      <h2>Prerequisites</h2>
-      <ul>
-        <li>Windows 10 or later</li>
-        <li>Administrator access</li>
-        <li>Internet connection</li>
-      </ul>
-    </div>
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
 
-    <div class="section">
-      <h2>Download Node.js</h2>
-      <ol>
-        <li>Open your browser.</li>
-        <li>Go to the official Node.js website.</li>
-        <li>Download the LTS version.</li>
-      </ol>
-    </div>
+.sidebar a {
+  display: block;
+  color: #d1d5db;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
 
-    <div class="section">
-      <h2>Install Node.js</h2>
-      <ol>
-        <li>Locate the downloaded installer file.</li>
-        <li>Double-click the file to launch the installer.</li>
-        <li>Click <strong>Next</strong>.</li>
-        <li>Accept the license agreement.</li>
-        <li>Click <strong>Next</strong> through the setup steps.</li>
-        <li>Click <strong>Install</strong>.</li>
-      </ol>
-    </div>
+.sidebar a:hover {
+  color: white;
+}
 
-    <div class="section">
-      <h2>Verify Installation</h2>
-      <p>Open Command Prompt and run:</p>
+/* Content */
+.content {
+  margin-left: 260px;
+  padding: 40px;
+  max-width: 800px;
+}
 
-      <pre><code>node -v</code></pre>
+h1 {
+  margin-top: 0;
+}
 
-      <p>If installed correctly, the version number is displayed.</p>
-    </div>
+h2 {
+  margin-top: 30px;
+}
 
-    <div class="section">
-      <h2>Troubleshooting</h2>
-      <h3>Node command not recognized</h3>
-      <p>Restart your system and try again.</p>
-
-      <h3>Installation fails</h3>
-      <p>Ensure you have administrator privileges and retry installation.</p>
-    </div>
-
-    <div class="section">
-      <h2>Next Steps</h2>
-      <p>You can now install packages using npm:</p>
-
-      <pre><code>npm install express</code></pre>
-    </div>
-
-    <a href="index.html" class="button">← Back to Portfolio</a>
-
-    <div class="footer">
-      © 2026 JSK Writes
-    </div>
-
-  </div>
-</body>
-</html>
+/* Code blocks */
+pre {
+  background: #111827;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+}
