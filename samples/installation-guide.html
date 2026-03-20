@@ -1,59 +1,47 @@
-/* Layout */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f9fafb;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Installation Guide</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
 
-.layout {
-  display: flex;
-}
+<body>
 
-/* Sidebar */
-.sidebar {
-  width: 240px;
-  background: #111827;
-  color: white;
-  height: 100vh;
-  padding: 20px;
-  position: fixed;
-}
+<div class="layout">
 
-.sidebar h2 {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
+  <aside class="sidebar">
+    <h2>Docs</h2>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="installation.html">Installation Guide</a>
+      <a href="user-guide.html">User Guide</a>
+      <a href="troubleshooting.html">Troubleshooting</a>
+    </nav>
+  </aside>
 
-.sidebar a {
-  display: block;
-  color: #d1d5db;
-  text-decoration: none;
-  margin-bottom: 10px;
-}
+  <main class="content">
 
-.sidebar a:hover {
-  color: white;
-}
+    <h1>Installation Guide</h1>
 
-/* Content */
-.content {
-  margin-left: 260px;
-  padding: 40px;
-  max-width: 800px;
-}
+    <h2>Prerequisites</h2>
+    <ul>
+      <li>Windows 10+</li>
+      <li>Internet connection</li>
+    </ul>
 
-h1 {
-  margin-top: 0;
-}
+    <h2>Steps</h2>
+    <ol>
+      <li>Download Node.js</li>
+      <li>Run installer</li>
+      <li>Verify installation</li>
+    </ol>
 
-h2 {
-  margin-top: 30px;
-}
+    <pre><code>node -v</code></pre>
 
-/* Code blocks */
-pre {
-  background: #111827;
-  color: white;
-  padding: 12px;
-  border-radius: 6px;
-}
+  </main>
+
+</div>
+
+</body>
+</html>
